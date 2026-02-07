@@ -1,0 +1,90 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "Pairing",
+            "base": "",
+            "fields": [
+                {
+                    "name": "synth_ticker",
+                    "type": "symbol_code"
+                },
+                {
+                    "name": "base_ticker",
+                    "type": "symbol_code"
+                },
+                {
+                    "name": "base_locked",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "mint",
+            "base": "",
+            "fields": [
+                {
+                    "name": "mod",
+                    "type": "name"
+                },
+                {
+                    "name": "minter",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "payment",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "setup",
+            "base": "",
+            "fields": [
+                {
+                    "name": "synth_ticker",
+                    "type": "symbol"
+                },
+                {
+                    "name": "base_ticker",
+                    "type": "symbol"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "mint",
+            "type": "mint",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setup",
+            "type": "setup",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "pairings",
+            "type": "Pairing",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
